@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SectionEyebrow } from '@/components/ui/SectionEyebrow';
@@ -9,26 +10,43 @@ type Props = {
   titleAfter?: string;
 };
 
-/**
- * Matches the home “Services I Provide” block: eyebrow line + split headline + Home link.
- */
 export function PageListHeading({ eyebrow, titleBefore, titleAccent, titleAfter = '' }: Props) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      const parentSection = containerRef.current.closest('section');
+      if (parentSection) {
+        parentSection.classList.remove('pt-28', 'md:pt-36');
+        parentSection.classList.add('pt-[120px]', 'md:pt-[148px]');
+      }
+    }
+  }, []);
+
   return (
-    <ScrollReveal className="flex flex-row items-end justify-between mb-12 md:mb-16 gap-4 md:gap-8">
-      <div className="max-w-2xl text-left">
-        <SectionEyebrow label={eyebrow} />
+    <div ref={containerRef}>
+      <ScrollReveal className="flex flex-col mb-12 md:mb-16 gap-0">
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-2 font-body text-[12px] text-green/60 mb-3">
+          <Link to="/" className="hover:underline">
+            Home
+          </Link>
+          <span className="text-green/30">/</span>
+          <span className="text-green/60 pointer-events-none">{titleAccent}</span>
+        </div>
+
+        {/* Eyebrow Label with 8px margin bottom override */}
+        <div className="mb-2">
+          <SectionEyebrow label={eyebrow} className="!mb-0" />
+        </div>
+
+        {/* Page Headline */}
         <h1 className="font-headline font-bold text-3xl md:text-5xl tracking-tight leading-[1.1]">
           <span className="text-green">{titleBefore}</span>
           <span className="text-yellow italic font-normal">{titleAccent}</span>
           {titleAfter ? <span className="text-green">{titleAfter}</span> : null}
         </h1>
-      </div>
-      <Link
-        to="/"
-        className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit self-end md:self-auto focus-visible:outline focus-visible:underline rounded shrink-0"
-      >
-        <span className="material-symbols-outlined">home</span> Home
-      </Link>
-    </ScrollReveal>
+      </ScrollReveal>
+    </div>
   );
 }

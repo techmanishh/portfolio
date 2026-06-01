@@ -26,8 +26,8 @@
     "heroBadgeLeft": "E-commerce",
     "heroBadgeMiddle": "Startups",
     "heroBadgeRight": "AI-Enhanced Engineering",
-    "resumeUrl": "/Resume.pdf",
-    "resumeDownloadFilename": "Manish_Gupta_Resume.pdf",
+    "resumeUrl": "/manish-resume.pdf",
+    "resumeDownloadFilename": "manish-gupta-resume.pdf",
     "about": {
       "lead": "About",
       "nameHighlight": "Manish Gupta",
@@ -102,20 +102,20 @@
     "heroPortrait": "/profile.png",
     "aboutPortrait": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&h=900&q=85",
     "social": {
-      "linkedin": "https://linkedin.com/in/manishgupta07",
-      "github": "https://github.com/laramaan"
+      "linkedin": "https://www.linkedin.com/in/techmanish",
+      "github": "https://github.com/techmanishh"
     },
     "contact": {
       "intro": "Have a Laravel build, WordPress project, or a freelance inquiry in mind? Send a short message with your stack and timeline I'll get back to you within a couple of business days.",
       "phone": "+91 97688 09635",
       "email": "manishgupta0746@gmail.com",
-      "socialHandle": "@laramaan on GitHub",
+      "socialHandle": "@techmanishh on GitHub",
       "address": "Mumbai, Maharashtra, India"
     },
     "footer": {
-      "blurb": "Full-stack web engineer with nearly 4 years delivering Laravel APIs, WordPress platforms, and React frontends for agencies, startups, and public-sector teams.",
+      "blurb": "Helping businesses grow with modern web, mobile, and AI-driven digital solutions. Building fast, scalable, and user-friendly experiences that drive real results.",
       "phone": "+91 97688 09635",
-      "web": "linkedin.com/in/manishgupta07",
+      "web": "www.linkedin.com/in/techmanish",
       "email": "manishgupta0746@gmail.com",
       "addressLines": [
         "Mumbai, Maharashtra,",

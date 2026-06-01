@@ -8,7 +8,6 @@ const NAV: { id: SectionId; label: string; hash: string }[] = [
   { id: 'services', label: 'Services', hash: '#services' },
   { id: 'portfolio', label: 'Projects', hash: '#portfolio' },
   { id: 'skills', label: 'Skills & Tools', hash: '#skills' },
-  { id: 'testimonials', label: 'Testimonial', hash: '#testimonials' },
   { id: 'about', label: 'About', hash: '#about' },
   { id: 'experience', label: 'Experience', hash: '#experience' },
   { id: 'blogs', label: 'Blogs', hash: '#blogs' },
@@ -47,11 +46,27 @@ export function Navbar({ activeSection, scrollSpyEnabled }: Props) {
 
       <div className="hidden md:flex items-center gap-6 lg:gap-8" role="list">
         {NAV.map((item) => {
-          const isActive = scrollSpyEnabled && onHome && activeSection === item.id;
+          let toTarget: string | { pathname: string; hash?: string };
+          let isActive = false;
+
+          if (item.id === 'services') {
+            toTarget = '/services';
+            isActive = pathname === '/services' || (scrollSpyEnabled && onHome && activeSection === 'services');
+          } else if (item.id === 'portfolio') {
+            toTarget = '/projects';
+            isActive = pathname === '/projects' || (scrollSpyEnabled && onHome && activeSection === 'portfolio');
+          } else if (item.id === 'blogs') {
+            toTarget = '/blogs';
+            isActive = pathname === '/blogs' || (scrollSpyEnabled && onHome && activeSection === 'blogs');
+          } else {
+            toTarget = { pathname: '/', hash: item.hash.slice(1) };
+            isActive = scrollSpyEnabled && onHome && activeSection === item.id;
+          }
+
           return (
             <Link
               key={item.hash}
-              to={{ pathname: '/', hash: item.hash.slice(1) }}
+              to={toTarget}
               role="listitem"
               className={`font-bold border-b-2 pb-0.5 transition-all duration-300 border-transparent hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded-sm ${
                 isActive

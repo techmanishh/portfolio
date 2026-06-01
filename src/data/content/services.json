@@ -4,7 +4,7 @@
       "sequence": 1,
       "id": "saas-mvp",
       "icon": "rocket",
-      "image": "/images/services/saas-mvp.jpg",
+      "image": "/images/services/saas-mvp.png",
       "title": "SaaS & MVP Development",
       "description": "I help startups and businesses turn ideas into scalable SaaS platforms and MVPs with fast development, modern architecture, and production-ready systems.",
       "detailed_description": "I specialise in building SaaS platforms and MVPs that are designed for real business growth, not just demos or prototypes. From idea validation to production launch, I create scalable, secure, and user-focused digital products that help businesses launch faster, validate ideas, attract customers, and scale confidently. Whether you are a startup founder building your first product or a business digitising internal operations, I deliver modern software solutions that are built to perform and grow with your business.",
@@ -106,7 +106,7 @@
       "sequence": 2,
       "id": "full-stack",
       "icon": "layers",
-      "image": "/images/services/full-stack.jpg",
+      "image": "/images/services/full-stack.png",
       "title": "Custom Web Application Development",
       "description": "I build modern, scalable, and high-performance web applications tailored to business needs, from intuitive frontend experiences to secure and reliable backend systems.",
       "detailed_description": "I develop custom web applications designed to help businesses improve operations, enhance customer experiences, and scale efficiently. From frontend interfaces to backend architecture, every solution is built with performance, security, scalability, and long-term maintainability in mind. Whether you need a business platform, internal management system, customer portal, or enterprise web application, I create reliable digital solutions that are production-ready from day one.",
@@ -207,7 +207,7 @@
       "sequence": 3,
       "id": "mobile-app",
       "icon": "smartphone",
-      "image": "/images/services/mobile-app.jpg",
+      "image": "/images/services/mobile-app.png",
       "title": "Mobile App Development",
       "description": "I build modern, high-performance mobile applications for iOS and Android with scalable backend systems, seamless user experiences, and business-focused functionality.",
       "detailed_description": "I develop cross-platform mobile applications that help businesses improve customer engagement, streamline operations, and create seamless digital experiences across iOS and Android. Every mobile app is built with performance, scalability, security, and long-term maintainability in mind. From startup MVPs to enterprise mobile solutions, I create apps that are production-ready, user-friendly, and designed to support real business growth.",
@@ -308,7 +308,7 @@
       "sequence": 4,
       "id": "ecommerce",
       "icon": "shopping_cart",
-      "image": "/images/services/ecommerce.jpg",
+      "image": "/images/services/ecommerce.png",
       "title": "E-commerce Development",
       "description": "I build modern, high-converting e-commerce platforms designed to help businesses sell online efficiently with secure payments, scalable infrastructure, and seamless shopping experiences.",
       "detailed_description": "I develop custom e-commerce solutions that help businesses increase sales, improve customer experience, and scale their online operations with confidence. From modern storefronts and secure payment systems to inventory management and automation, every e-commerce platform is built for performance, scalability, mobile responsiveness, and long-term business growth. Whether you need a Shopify store, WooCommerce platform, custom online marketplace, or subscription-based commerce system, I create reliable and conversion-focused digital shopping experiences tailored to your business goals.",
@@ -410,9 +410,214 @@
     },
     {
       "sequence": 5,
+      "id": "ai-development",
+      "icon": "auto_awesome",
+      "image": "/images/services/ai-development.png",
+      "title": "AI-Powered Solutions",
+      "description": "I build AI-powered applications, automations, and intelligent business systems that reduce manual work, improve efficiency, and create smarter digital experiences.",
+      "detailed_description": "I help businesses integrate AI into their products, workflows, and operations to improve efficiency, automate repetitive tasks, and create modern user experiences. From AI-powered chat systems and intelligent search to workflow automation, document processing, and business intelligence tools, every solution is built to solve practical business problems and deliver measurable value. Whether you want to streamline internal operations, improve customer support, enhance your SaaS platform, or build AI-driven features into your product, I create scalable AI solutions tailored to real business needs.",
+      "services_included": [
+        "AI-powered chat and conversational systems",
+        "AI workflow and business process automation",
+        "Intelligent document processing and data extraction",
+        "AI-powered search and recommendation systems",
+        "Custom AI integrations for web and mobile applications",
+        "Knowledge base and AI assistant development",
+        "AI-driven customer support systems",
+        "Content summarisation and classification tools",
+        "Prompt engineering and AI system optimisation",
+        "AI-powered analytics and reporting systems",
+        "Natural language processing integrations",
+        "Internal AI productivity tools and automation",
+        "Scalable AI API integrations",
+        "AI monitoring, optimisation, and cost management"
+      ],
+      "industries": [
+        "SaaS & Technology Platforms",
+        "Healthcare & Medical Systems",
+        "Legal & Compliance",
+        "Finance & Fintech",
+        "E-commerce & Retail",
+        "Education & E-Learning",
+        "Customer Support & Service Platforms",
+        "HR & Recruitment Technology"
+      ],
+      "benefits": [
+        "Reduce repetitive manual work through intelligent automation",
+        "Improve customer experience with AI-powered interactions and support",
+        "Increase operational efficiency and team productivity",
+        "Build modern digital products with intelligent features users expect today",
+        "Automate data processing and business workflows at scale",
+        "Create competitive advantages through AI-driven business systems"
+      ],
+      "use_cases": [
+        "Businesses automating internal workflows and repetitive operations",
+        "SaaS platforms integrating AI-powered assistants and intelligent features",
+        "Companies needing document processing and automated data extraction",
+        "Customer support systems requiring AI-powered response automation",
+        "Platforms wanting semantic search, recommendations, or intelligent analytics"
+      ],
+      "problems_solved": [
+        "Manual processes consuming excessive time and operational resources",
+        "Customer support teams overwhelmed by repetitive queries",
+        "Large amounts of unstructured data difficult to process efficiently",
+        "Traditional search systems failing to understand user intent",
+        "Slow business workflows caused by repetitive human tasks",
+        "Lack of intelligent features reducing product competitiveness in modern markets"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "AI Strategy & Requirement Planning",
+          "description": "Identify business problems, automation opportunities, and the best AI approach for your product or workflow."
+        },
+        {
+          "step": 2,
+          "title": "AI System Architecture",
+          "description": "Design scalable AI workflows, integrations, prompts, and backend infrastructure tailored to business requirements."
+        },
+        {
+          "step": 3,
+          "title": "Development & Integration",
+          "description": "Build AI-powered features, automate workflows, integrate APIs, and connect systems with existing applications."
+        },
+        {
+          "step": 4,
+          "title": "Testing & Optimisation",
+          "description": "Validate AI outputs, optimise reliability, improve performance, and refine workflows for production usage."
+        },
+        {
+          "step": 5,
+          "title": "Deployment & Monitoring",
+          "description": "Deploy scalable AI systems with monitoring, analytics, cost controls, and long-term optimisation strategies."
+        }
+      ],
+      "deliverables": [
+        "Production-ready AI-powered application or feature",
+        "AI workflow automation systems",
+        "Custom AI integrations and API setup",
+        "AI assistant or conversational interface implementation",
+        "Document processing and intelligent automation setup",
+        "Monitoring, analytics, and cost optimisation configuration",
+        "Technical documentation and deployment setup",
+        "Post-launch support and AI optimisation"
+      ],
+      "outcomes": [
+        "Smarter business systems powered by AI-driven automation",
+        "Improved customer engagement through intelligent user experiences",
+        "Reduced operational costs and manual workload",
+        "Faster and more efficient business processes",
+        "Scalable AI infrastructure built for future growth",
+        "A competitive advantage through modern AI-powered digital solutions"
+      ]
+    },
+    {
+      "sequence": 6,
+      "id": "business-automation",
+      "icon": "automation",
+      "image": "/images/services/business-automation.png",
+      "title": "Business Automation Solutions",
+      "description": "Custom automation systems that eliminate repetitive work, streamline operations, and connect your business tools so your team can focus on growth instead of manual processes.",
+      "detailed_description": "I design and build business automation systems that reduce operational overhead, eliminate repetitive manual work, and improve the speed and reliability of your internal workflows. Whether you need automated lead handling, approval workflows, reporting pipelines, CRM synchronisation, invoicing systems, or multi-platform process automation, I create solutions tailored to how your business actually operates. Every automation system is built with scalability, visibility, and maintainability in mind so your processes continue working reliably as your business grows.",
+      "services_included": [
+        "Custom workflow automation development",
+        "CRM and sales pipeline automation",
+        "Lead capture and automated follow-up systems",
+        "Invoice, billing, and payment workflow automation",
+        "Email, SMS, and notification automation",
+        "Business process automation across multiple platforms",
+        "Approval workflows and internal task routing",
+        "Automated reporting and dashboard generation",
+        "Inventory and order processing automation",
+        "Data synchronisation between business systems",
+        "Document generation and file processing automation",
+        "Webhook and event-driven automation systems",
+        "Internal admin panel and operations tooling",
+        "Automation monitoring and failure alert systems"
+      ],
+      "industries": [
+        "Agencies & Service Businesses",
+        "E-commerce & Retail",
+        "Healthcare & Clinics",
+        "Real Estate & Property Management",
+        "Finance & Accounting",
+        "Logistics & Operations",
+        "Education & Coaching",
+        "SaaS & Software Companies"
+      ],
+      "benefits": [
+        "Reduce repetitive manual tasks and operational bottlenecks",
+        "Improve business efficiency with faster and more reliable workflows",
+        "Minimise human error in data handling, reporting, and customer operations",
+        "Keep customer, sales, and operational data synchronised automatically",
+        "Free up team time so staff can focus on higher-value work instead of administration",
+        "Create scalable internal systems that grow with your business operations"
+      ],
+      "use_cases": [
+        "A sales team needing automatic lead assignment and follow-up workflows",
+        "An e-commerce business automating inventory updates, invoices, and shipping notifications",
+        "A healthcare or service business automating appointment reminders and internal approvals",
+        "A company manually transferring data between multiple disconnected systems",
+        "A growing business needing operational workflows that scale without hiring additional admin staff"
+      ],
+      "problems_solved": [
+        "Teams wasting hours on repetitive administrative work every week",
+        "Manual data entry causing inconsistencies and operational errors",
+        "Disconnected systems requiring duplicate work across multiple platforms",
+        "Slow approval and operational workflows delaying customer response times",
+        "Lack of visibility into automation failures and process bottlenecks",
+        "Operational scaling problems where growth increases workload faster than the team can handle"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Workflow analysis",
+          "description": "Review your current business operations, identify repetitive tasks, bottlenecks, and opportunities for automation."
+        },
+        {
+          "step": 2,
+          "title": "Automation architecture",
+          "description": "Design the automation workflows, integrations, triggers, and business rules required for reliable execution."
+        },
+        {
+          "step": 3,
+          "title": "System development",
+          "description": "Build automation pipelines, integrations, admin tools, and notification systems tailored to your workflow."
+        },
+        {
+          "step": 4,
+          "title": "Testing & optimisation",
+          "description": "Validate workflow reliability, edge cases, failure handling, and optimise for operational efficiency."
+        },
+        {
+          "step": 5,
+          "title": "Deployment & training",
+          "description": "Deploy the automation systems, provide documentation, team training, and ongoing support if required."
+        }
+      ],
+      "deliverables": [
+        "Custom automation workflows and systems",
+        "Third-party platform integrations",
+        "Internal admin and operations tools",
+        "Automated reporting and notification systems",
+        "Workflow monitoring and logging setup",
+        "Documentation and operational training",
+        "Automation maintenance and support guidance"
+      ],
+      "outcomes": [
+        "Significant reduction in repetitive operational work",
+        "Faster internal workflows and customer response times",
+        "Improved operational accuracy with reduced manual errors",
+        "Better visibility into business operations and workflow performance",
+        "Scalable automation systems capable of supporting business growth",
+        "A more efficient business operation with lower administrative overhead"
+      ]
+    },
+    {
+      "sequence": 7,
       "id": "wordpress-woocommerce",
       "icon": "web",
-      "image": "/images/services/wordpress-woocommerce.jpg",
+      "image": "/images/services/wordpress-woocommerce.png",
       "title": "WordPress Development",
       "description": "I build modern, high-performance WordPress websites tailored for business growth, content management, scalability, and seamless user experiences.",
       "detailed_description": "I develop custom WordPress websites designed to help businesses establish a strong digital presence with flexibility, performance, and ease of management. From business websites and service platforms to advanced WordPress systems with custom functionality, every solution is built with clean architecture, responsive design, SEO optimisation, and long-term maintainability in mind. Whether you need a professional company website, a scalable content platform, or custom WordPress functionality tailored to your workflow, I create reliable and future-ready WordPress solutions built for growth.",
@@ -512,10 +717,10 @@
       ]
     },
     {
-      "sequence": 6,
+      "sequence": 8,
       "id": "shopify",
       "icon": "storefront",
-      "image": "/images/services/shopify.jpg",
+      "image": "/images/services/shopify.png",
       "title": "Shopify Development",
       "description": "I build custom Shopify stores and scalable e-commerce experiences optimised for conversions, performance, mobile shopping, and long-term business growth.",
       "detailed_description": "I develop modern Shopify stores tailored to your brand, products, and customer experience goals. From custom storefront design and Shopify theme development to advanced integrations and conversion optimisation, every Shopify solution is built for scalability, speed, and usability. Whether you are launching a new online store, migrating from another platform, or scaling an existing Shopify business, I create high-performing e-commerce experiences that help businesses increase sales and manage operations efficiently.",
@@ -616,215 +821,10 @@
       ]
     },
     {
-      "sequence": 7,
-      "id": "ai-development",
-      "icon": "auto_awesome",
-      "image": "/images/services/ai-development.jpg",
-      "title": "AI-Powered Solutions",
-      "description": "I build AI-powered applications, automations, and intelligent business systems that reduce manual work, improve efficiency, and create smarter digital experiences.",
-      "detailed_description": "I help businesses integrate AI into their products, workflows, and operations to improve efficiency, automate repetitive tasks, and create modern user experiences. From AI-powered chat systems and intelligent search to workflow automation, document processing, and business intelligence tools, every solution is built to solve practical business problems and deliver measurable value. Whether you want to streamline internal operations, improve customer support, enhance your SaaS platform, or build AI-driven features into your product, I create scalable AI solutions tailored to real business needs.",
-      "services_included": [
-        "AI-powered chat and conversational systems",
-        "AI workflow and business process automation",
-        "Intelligent document processing and data extraction",
-        "AI-powered search and recommendation systems",
-        "Custom AI integrations for web and mobile applications",
-        "Knowledge base and AI assistant development",
-        "AI-driven customer support systems",
-        "Content summarisation and classification tools",
-        "Prompt engineering and AI system optimisation",
-        "AI-powered analytics and reporting systems",
-        "Natural language processing integrations",
-        "Internal AI productivity tools and automation",
-        "Scalable AI API integrations",
-        "AI monitoring, optimisation, and cost management"
-      ],
-      "industries": [
-        "SaaS & Technology Platforms",
-        "Healthcare & Medical Systems",
-        "Legal & Compliance",
-        "Finance & Fintech",
-        "E-commerce & Retail",
-        "Education & E-Learning",
-        "Customer Support & Service Platforms",
-        "HR & Recruitment Technology"
-      ],
-      "benefits": [
-        "Reduce repetitive manual work through intelligent automation",
-        "Improve customer experience with AI-powered interactions and support",
-        "Increase operational efficiency and team productivity",
-        "Build modern digital products with intelligent features users expect today",
-        "Automate data processing and business workflows at scale",
-        "Create competitive advantages through AI-driven business systems"
-      ],
-      "use_cases": [
-        "Businesses automating internal workflows and repetitive operations",
-        "SaaS platforms integrating AI-powered assistants and intelligent features",
-        "Companies needing document processing and automated data extraction",
-        "Customer support systems requiring AI-powered response automation",
-        "Platforms wanting semantic search, recommendations, or intelligent analytics"
-      ],
-      "problems_solved": [
-        "Manual processes consuming excessive time and operational resources",
-        "Customer support teams overwhelmed by repetitive queries",
-        "Large amounts of unstructured data difficult to process efficiently",
-        "Traditional search systems failing to understand user intent",
-        "Slow business workflows caused by repetitive human tasks",
-        "Lack of intelligent features reducing product competitiveness in modern markets"
-      ],
-      "process": [
-        {
-          "step": 1,
-          "title": "AI Strategy & Requirement Planning",
-          "description": "Identify business problems, automation opportunities, and the best AI approach for your product or workflow."
-        },
-        {
-          "step": 2,
-          "title": "AI System Architecture",
-          "description": "Design scalable AI workflows, integrations, prompts, and backend infrastructure tailored to business requirements."
-        },
-        {
-          "step": 3,
-          "title": "Development & Integration",
-          "description": "Build AI-powered features, automate workflows, integrate APIs, and connect systems with existing applications."
-        },
-        {
-          "step": 4,
-          "title": "Testing & Optimisation",
-          "description": "Validate AI outputs, optimise reliability, improve performance, and refine workflows for production usage."
-        },
-        {
-          "step": 5,
-          "title": "Deployment & Monitoring",
-          "description": "Deploy scalable AI systems with monitoring, analytics, cost controls, and long-term optimisation strategies."
-        }
-      ],
-      "deliverables": [
-        "Production-ready AI-powered application or feature",
-        "AI workflow automation systems",
-        "Custom AI integrations and API setup",
-        "AI assistant or conversational interface implementation",
-        "Document processing and intelligent automation setup",
-        "Monitoring, analytics, and cost optimisation configuration",
-        "Technical documentation and deployment setup",
-        "Post-launch support and AI optimisation"
-      ],
-      "outcomes": [
-        "Smarter business systems powered by AI-driven automation",
-        "Improved customer engagement through intelligent user experiences",
-        "Reduced operational costs and manual workload",
-        "Faster and more efficient business processes",
-        "Scalable AI infrastructure built for future growth",
-        "A competitive advantage through modern AI-powered digital solutions"
-      ]
-    },
-    {
-      "sequence": 8,
-      "id": "business-automation",
-      "icon": "automation",
-      "image": "/images/services/business-automation.jpg",
-      "title": "Business Automation Solutions",
-      "description": "Custom automation systems that eliminate repetitive work, streamline operations, and connect your business tools so your team can focus on growth instead of manual processes.",
-      "detailed_description": "I design and build business automation systems that reduce operational overhead, eliminate repetitive manual work, and improve the speed and reliability of your internal workflows. Whether you need automated lead handling, approval workflows, reporting pipelines, CRM synchronisation, invoicing systems, or multi-platform process automation, I create solutions tailored to how your business actually operates. Every automation system is built with scalability, visibility, and maintainability in mind so your processes continue working reliably as your business grows.",
-      "services_included": [
-        "Custom workflow automation development",
-        "CRM and sales pipeline automation",
-        "Lead capture and automated follow-up systems",
-        "Invoice, billing, and payment workflow automation",
-        "Email, SMS, and notification automation",
-        "Business process automation across multiple platforms",
-        "Approval workflows and internal task routing",
-        "Automated reporting and dashboard generation",
-        "Inventory and order processing automation",
-        "Data synchronisation between business systems",
-        "Document generation and file processing automation",
-        "Webhook and event-driven automation systems",
-        "Internal admin panel and operations tooling",
-        "Automation monitoring and failure alert systems"
-      ],
-      "industries": [
-        "Agencies & Service Businesses",
-        "E-commerce & Retail",
-        "Healthcare & Clinics",
-        "Real Estate & Property Management",
-        "Finance & Accounting",
-        "Logistics & Operations",
-        "Education & Coaching",
-        "SaaS & Software Companies"
-      ],
-      "benefits": [
-        "Reduce repetitive manual tasks and operational bottlenecks",
-        "Improve business efficiency with faster and more reliable workflows",
-        "Minimise human error in data handling, reporting, and customer operations",
-        "Keep customer, sales, and operational data synchronised automatically",
-        "Free up team time so staff can focus on higher-value work instead of administration",
-        "Create scalable internal systems that grow with your business operations"
-      ],
-      "use_cases": [
-        "A sales team needing automatic lead assignment and follow-up workflows",
-        "An e-commerce business automating inventory updates, invoices, and shipping notifications",
-        "A healthcare or service business automating appointment reminders and internal approvals",
-        "A company manually transferring data between multiple disconnected systems",
-        "A growing business needing operational workflows that scale without hiring additional admin staff"
-      ],
-      "problems_solved": [
-        "Teams wasting hours on repetitive administrative work every week",
-        "Manual data entry causing inconsistencies and operational errors",
-        "Disconnected systems requiring duplicate work across multiple platforms",
-        "Slow approval and operational workflows delaying customer response times",
-        "Lack of visibility into automation failures and process bottlenecks",
-        "Operational scaling problems where growth increases workload faster than the team can handle"
-      ],
-      "process": [
-        {
-          "step": 1,
-          "title": "Workflow analysis",
-          "description": "Review your current business operations, identify repetitive tasks, bottlenecks, and opportunities for automation."
-        },
-        {
-          "step": 2,
-          "title": "Automation architecture",
-          "description": "Design the automation workflows, integrations, triggers, and business rules required for reliable execution."
-        },
-        {
-          "step": 3,
-          "title": "System development",
-          "description": "Build automation pipelines, integrations, admin tools, and notification systems tailored to your workflow."
-        },
-        {
-          "step": 4,
-          "title": "Testing & optimisation",
-          "description": "Validate workflow reliability, edge cases, failure handling, and optimise for operational efficiency."
-        },
-        {
-          "step": 5,
-          "title": "Deployment & training",
-          "description": "Deploy the automation systems, provide documentation, team training, and ongoing support if required."
-        }
-      ],
-      "deliverables": [
-        "Custom automation workflows and systems",
-        "Third-party platform integrations",
-        "Internal admin and operations tools",
-        "Automated reporting and notification systems",
-        "Workflow monitoring and logging setup",
-        "Documentation and operational training",
-        "Automation maintenance and support guidance"
-      ],
-      "outcomes": [
-        "Significant reduction in repetitive operational work",
-        "Faster internal workflows and customer response times",
-        "Improved operational accuracy with reduced manual errors",
-        "Better visibility into business operations and workflow performance",
-        "Scalable automation systems capable of supporting business growth",
-        "A more efficient business operation with lower administrative overhead"
-      ]
-    },
-    {
       "sequence": 9,
       "id": "frontend-engineering",
       "icon": "view_quilt",
-      "image": "/images/services/frontend.jpg",
+      "image": "/images/services/frontend-engineering.png",
       "title": "Modern UI/UX Development",
       "description": "I build modern, responsive, and high-converting user interfaces that improve customer experience, increase engagement, and help digital products scale confidently.",
       "detailed_description": "I design and develop modern frontend experiences that are fast, intuitive, and built for real business growth. From SaaS dashboards and enterprise platforms to customer-facing applications and internal business tools, every interface is engineered for performance, usability, accessibility, and long-term scalability. I focus on creating clean and conversion-focused user experiences that not only look modern but also help businesses improve engagement, reduce friction, and deliver better digital experiences across every device.",
@@ -927,7 +927,7 @@
       "sequence": 10,
       "id": "cloud-devops",
       "icon": "cloud",
-      "image": "/images/services/cloud-devops.jpg",
+      "image": "/images/services/cloud-devops.png",
       "title": "Cloud & DevOps",
       "description": "I build secure, scalable, and high-performance cloud infrastructure with automated deployments, monitoring, and reliable production environments designed for modern applications.",
       "detailed_description": "I help businesses deploy, manage, and scale applications on modern cloud infrastructure with reliability, security, and performance in mind. From server configuration and automated deployments to monitoring and scalability optimisation, I create production-ready cloud environments that support business growth and reduce operational risks. Whether you are launching a SaaS platform, scaling an e-commerce store, or modernising legacy infrastructure, I ensure your systems are stable, secure, and built for long-term performance.",
@@ -1031,7 +1031,7 @@
       "sequence": 11,
       "id": "scalable-system-architecture",
       "icon": "account_tree",
-      "image": "/images/services/system-architecture.jpg",
+      "image": "/images/services/scalable-system-architecture.png",
       "title": "Scalable System Architecture",
       "description": "Architecture planning and system design for applications that need to scale reliably handling growth in users, traffic, data, and operational complexity without constant rewrites.",
       "detailed_description": "I design scalable architectures that ensure your product stays fast and reliable as it grows. From database strategy to infrastructure planning, I build backend systems tailored for long-term stability, avoiding the trap of overengineering while ensuring your tech remains maintainable as your traffic and team scale.",
@@ -1133,7 +1133,7 @@
       "sequence": 12,
       "id": "tech-consulting",
       "icon": "support_agent",
-      "image": "/images/services/consulting.jpg",
+      "image": "/images/services/tech-consulting.png",
       "title": "Technical Consulting & Product Strategy",
       "description": "Technical consulting, architecture guidance, product planning, and project rescue services helping businesses make smarter technology decisions, scale efficiently, and recover struggling projects.",
       "detailed_description": "I help businesses make confident technical and product decisions whether you are planning a new platform, scaling an existing product, modernising legacy systems, or rescuing a project that has become difficult to maintain. From technical audits and architecture reviews to product strategy, scalability planning, and delivery optimisation, I provide practical guidance backed by hands-on engineering experience. The focus is always on solving business problems, reducing technical risk, improving development efficiency, and creating a clear roadmap for sustainable growth.",
@@ -1237,7 +1237,7 @@
       "sequence": 13,
       "id": "seo-performance",
       "icon": "manage_search",
-      "image": "/images/services/seo-performance.jpg",
+      "image": "/images/services/seo-performance.png",
       "title": "Performance & SEO Optimisation",
       "description": "I optimise websites and applications for speed, search visibility, scalability, and user experience helping businesses improve rankings, engagement, and conversions.",
       "detailed_description": "I help businesses improve website speed, technical SEO, and overall application performance to create faster, more scalable, and search-friendly digital experiences. From Core Web Vitals optimisation and database tuning to structured SEO implementation and caching strategies, every improvement is focused on delivering better user experience, stronger search rankings, and higher business performance. Whether you are running a content platform, SaaS product, e-commerce store, or business website, I ensure your platform is built to perform efficiently under real-world traffic and usage.",
@@ -1340,7 +1340,7 @@
       "sequence": 14,
       "id": "api-integration",
       "icon": "hub",
-      "image": "/images/services/integrations.jpg",
+      "image": "/images/services/api-integration.png",
       "title": "API Development & Third-Party Integrations",
       "description": "Custom API development and seamless third-party integrations connecting your applications, payment systems, CRMs, marketing tools, and external services into one reliable ecosystem.",
       "detailed_description": "I design and build APIs and integration systems that allow your applications, platforms, and third-party services to communicate reliably at scale. Whether you need a backend API for a SaaS product, payment gateway integration, CRM synchronisation, webhook processing, or complex multi-system workflows, I create maintainable integration architecture built for long-term reliability. Every API and integration layer is designed with security, versioning, logging, monitoring, and scalability in mind so your business systems remain connected even as your platform evolves.",
@@ -1441,7 +1441,7 @@
       "sequence": 15,
       "id": "database-design",
       "icon": "storage",
-      "image": "/images/services/database.jpg",
+      "image": "/images/services/database-design.png",
       "title": "Database Design & Optimisation",
       "description": "Scalable database architecture, query optimisation, and performance tuning designed to keep your applications fast, reliable, and ready for long-term growth.",
       "detailed_description": "A well-structured database is the foundation of every scalable application. I design and optimise databases that handle growing traffic, large datasets, and complex business logic without slowing down your platform. From designing efficient relational schemas and indexing strategies to optimising slow queries and implementing caching systems, I ensure your application remains performant, maintainable, and cost-efficient as it scales. Whether you are building a new product or improving an existing system, I create database architectures engineered for reliability, speed, and long-term scalability.",
@@ -1544,7 +1544,7 @@
       "sequence": 16,
       "id": "websocket-realtime",
       "icon": "electric_bolt",
-      "image": "/images/services/websocket.jpg",
+      "image": "/images/services/websocket-realtime.png",
       "title": "Real-Time Applications & Systems",
       "description": "I build real-time applications and live systems with instant updates, notifications, tracking, and interactive experiences that keep users connected and engaged.",
       "detailed_description": "I develop real-time applications and event-driven systems that deliver live user experiences without delays, refreshes, or outdated data. From SaaS dashboards and collaborative tools to live tracking systems, chat applications, and real-time analytics platforms, every solution is built for speed, scalability, and reliability. Using modern WebSocket architecture and real-time communication technologies, I help businesses create faster, more interactive digital experiences that improve engagement, operational visibility, and user satisfaction across web and mobile platforms.",
@@ -1648,7 +1648,7 @@
       "sequence": 17,
       "id": "cms-development",
       "icon": "dashboard_customize",
-      "image": "/images/services/cms.jpg",
+      "image": "/images/services/cms-development.png",
       "title": "Custom CMS Solutions",
       "description": "Custom CMS and admin systems designed around your unique workflows, not limited by off-the-shelf templates. We build scalable platforms that adapt to your business operations, ensuring your tech grows as fast as you do.",
       "detailed_description": "I build custom CMS platforms tailored specifically to how your business manages content, data, workflows, and internal operations. Instead of forcing your team to adapt to restrictive off-the-shelf CMS tools, I create systems designed around your exact requirements from editorial workflows and role management to structured data architecture, APIs, and automation. Whether you need a headless CMS for modern frontend applications, a powerful internal admin panel, or a complete content and operations platform, every solution is engineered for performance, scalability, maintainability, and ease of use.",

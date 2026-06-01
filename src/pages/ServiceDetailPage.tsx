@@ -28,13 +28,24 @@ export default function ServiceDetailPage() {
       </Helmet>
       
       {/* Hero Section */}
-      <article className="relative pt-32 md:pt-48 pb-12 md:pb-16 bg-white overflow-hidden">
+      <article className="relative pt-36 md:pt-40 pb-12 md:pb-16 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             
             {/* Content on Left */}
             <div className="relative z-10">
               <ScrollReveal>
+                <div className="flex items-center gap-2 font-body text-[12px] md:text-[13px] text-green/60 mb-2 md:mb-3">
+                  <Link to="/" className="hover:underline">
+                    Home
+                  </Link>
+                  <span className="text-green/30">/</span>
+                  <Link to="/services" className="hover:underline">
+                    Services
+                  </Link>
+                  <span className="text-green/30">/</span>
+                  <span className="text-green/60 pointer-events-none">{item.title}</span>
+                </div>
                 <h1 className="font-headline font-bold text-4xl md:text-5xl lg:text-6xl text-green leading-[1.15] tracking-tight mb-8">
                   {item.title.split(' ').map((word, i, arr) => (
                     <span key={i}>
@@ -59,14 +70,6 @@ export default function ServiceDetailPage() {
 
             {/* Image on Right */}
             <ScrollReveal delay={0.2} className="relative">
-              <div className="flex justify-end mb-6">
-                <Link
-                  to="/services"
-                  className="text-green/60 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors focus-visible:outline focus-visible:underline rounded text-sm uppercase tracking-widest"
-                >
-                  <span className="material-symbols-outlined text-[18px]">arrow_back</span> All services
-                </Link>
-              </div>
               {item.image && (
                 <div className="relative z-10 w-full aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl border-4 border-grey/30">
                   <img src={item.image} alt={item.title} className="w-full h-full object-cover" />

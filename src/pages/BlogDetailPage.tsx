@@ -30,17 +30,22 @@ export default function BlogDetailPage() {
       <article className="pt-28 md:pt-36 pb-8 bg-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <ScrollReveal>
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
-              <h1 className="font-headline font-bold text-4xl md:text-5xl lg:text-6xl text-green leading-[1.1] tracking-tight">
-                {item.title}
-              </h1>
-              <Link
-                to="/blogs"
-                className="text-green/80 hover:text-yellow font-bold font-headline flex items-center gap-2 transition-colors w-fit focus-visible:outline focus-visible:underline rounded shrink-0"
-              >
-                <span className="material-symbols-outlined">arrow_back</span> All blogs
+            {/* Dynamic Breadcrumbs */}
+            <div className="flex items-center gap-2 font-body text-[12px] md:text-[13px] text-green/60 mb-4">
+              <Link to="/" className="hover:underline">
+                Home
               </Link>
+              <span className="text-green/30">/</span>
+              <Link to="/blogs" className="hover:underline">
+                Blogs
+              </Link>
+              <span className="text-green/30">/</span>
+              <span className="text-green/60 pointer-events-none">{item.title}</span>
             </div>
+
+            <h1 className="font-headline font-bold text-4xl md:text-5xl lg:text-6xl text-green leading-[1.1] tracking-tight mb-8">
+              {item.title}
+            </h1>
             
             {/* Excerpt */}
             <div className="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center mb-8">
