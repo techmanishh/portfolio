@@ -1,5 +1,6 @@
 import type { RefObject } from 'react';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { testimonials, testimonialsSettings } from '@/data/portfolio';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
@@ -154,12 +155,19 @@ export function TestimonialsSection() {
                         &ldquo;{test.text}&rdquo;
                       </p>
                     </div>
-                    <div className="flex items-center gap-3 mt-auto shrink-0">
-                      <div>
-                        <h3 className="font-headline font-bold text-green text-[15px]">{test.name}</h3>
-                        <p className="font-body text-green/60 text-[13px]">{test.role}</p>
+                    {test.projectId && (
+                      <div className="mt-auto shrink-0 pt-4 border-t border-black/5">
+                        <Link
+                          to={`/project/${test.projectId}`}
+                          className="inline-flex items-center gap-1.5 font-headline font-bold text-xs md:text-sm text-green hover:text-yellow transition-colors duration-200 group/link"
+                        >
+                          View Case Study
+                          <span className="material-symbols-outlined text-[18px] translate-y-[0.5px] group-hover/link:translate-x-0.5 transition-transform duration-200">
+                            arrow_forward
+                          </span>
+                        </Link>
                       </div>
-                    </div>
+                    )}
                   </motion.div>
                 </article>
               ))}

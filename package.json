@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node generate-sitemap.js",
     "postbuild": "if [ \"$VERCEL\" != \"1\" ]; then react-snap; fi",
     "preview": "vite preview"
   },

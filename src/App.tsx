@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { RootLayout } from '@/layout/RootLayout';
 import { PageLoader } from '@/components/PageLoader';
+import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
 
 const HomePage = lazy(() => import('@/pages/HomePage'));
 const ProjectsPage = lazy(() => import('@/pages/ProjectsPage'));
@@ -14,6 +15,7 @@ const LegalPage = lazy(() => import('@/pages/LegalPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
 export default function App() {
+  useGoogleAnalytics();
   return (
     <Suspense fallback={<PageLoader />}>
       <Routes>

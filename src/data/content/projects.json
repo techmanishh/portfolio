@@ -1,70 +1,9 @@
 {
   "projects": [
-    {
-      "id": "enablrsales-platform",
-      "order": 1,
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-      "gallery": [
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=900&auto=format&fit=crop"
-      ],
-      "title": "Enablrsales — eDetailing Platform",
-      "live_url": "https://enablrsales.com",
-      "is_public": true,
-      "content": "Enablrsales.com is a cloud-based eDetailing platform built to support modern sales teams with structured, high-performance digital workflows. I contributed to frontend and backend feature development using PHP, HTML, and CSS within an Agile team environment.\n\nThe platform is used in real-world field scenarios, where reliability and performance are critical. My work focused on building production-ready features, refining UI interactions, and ensuring stable releases across sprint cycles.\n\nThis project strengthened my ability to work on live systems, collaborate with stakeholders, and deliver features that directly impact business operations.",
-      "summary": "A cloud-based sales enablement platform designed to streamline eDetailing workflows and empower field sales teams with reliable digital tools.",
-      "tags": [
-        "SaaS Platform",
-        "Sales Enablement",
-        "Cloud Application",
-        "Enterprise Tool"
-      ],
-      "stack": [
-        "PHP",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "REST APIs",
-        "Cloud Integration"
-      ],
-      "problem": "Sales teams needed a reliable digital platform to deliver product presentations in the field. Existing processes were inconsistent, difficult to scale, and not optimized for real-world usage conditions.",
-      "solution": "Helped build a cloud-based eDetailing platform that enables structured content delivery, improves workflow efficiency, and ensures consistent performance across devices used by field teams.",
-      "features": [
-        "Dynamic content delivery for sales presentations",
-        "Optimized UI for field usage",
-        "Backend integrations for data handling",
-        "Performance-focused frontend rendering",
-        "Modular feature releases aligned with sprint cycles"
-      ],
-      "highlights": [
-        "Delivered production features used by real sales teams",
-        "Worked in Agile sprint cycles with consistent releases",
-        "Collaborated with stakeholders to refine requirements",
-        "Maintained stability across multiple iterations"
-      ],
-      "challenges": [
-        "Ensuring performance in low-connectivity environments",
-        "Managing evolving requirements across releases",
-        "Balancing speed of delivery with code quality",
-        "Maintaining UI consistency across devices"
-      ],
-      "impact": [
-        "Improved reliability of digital sales workflows",
-        "Enabled faster content delivery for field teams",
-        "Reduced friction in sales presentations",
-        "Supported scaling across multiple users and teams"
-      ],
-      "learnings": [
-        "Building reliable systems for real-world usage",
-        "Maintaining clean code in long-term projects",
-        "Working effectively in Agile teams",
-        "Balancing business needs with technical constraints"
-      ]
-    },
+
     {
       "id": "urbanlogic-cms",
-      "order": 2,
+      "order": 1,
       "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
       "gallery": [
         "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=900&auto=format&fit=crop",
@@ -152,7 +91,7 @@
     },
     {
       "id": "expresstrackers-website",
-      "order": 3,
+      "order": 2,
       "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
       "gallery": [
         "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=900&auto=format&fit=crop",
@@ -219,7 +158,7 @@
     },
     {
       "id": "hanusan-pharmaceutical",
-      "order": 4,
+      "order": 3,
       "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=1200&auto=format&fit=crop",
       "gallery": [
         "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?q=80&w=900&auto=format&fit=crop",
@@ -298,7 +237,7 @@
     },
     {
       "id": "energy-transition-platform",
-      "order": 5,
+      "order": 4,
       "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop",
       "gallery": [
         "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=900&auto=format&fit=crop",
@@ -375,7 +314,7 @@
     },
     {
       "id": "iced-niti-aayog",
-      "order": 6,
+      "order": 5,
       "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200&auto=format&fit=crop",
       "gallery": [
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=900&auto=format&fit=crop",

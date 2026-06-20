@@ -65,9 +65,10 @@ export type Blog = {
 export type Testimonial = {
   id?: string;
   text: string;
-  name: string;
-  role: string;
+  name?: string;
+  role?: string;
   image?: string;
+  projectId?: string;
 };
 
 export type Faq = { q: string; a: string };
