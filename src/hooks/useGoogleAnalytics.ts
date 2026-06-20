@@ -7,12 +7,10 @@ export function useGoogleAnalytics() {
   const location = useLocation();
 
   useEffect(() => {
-    console.log('[GA Debug] ID:', GA_MEASUREMENT_ID);
     if (!GA_MEASUREMENT_ID) return;
 
     // Load GA script dynamically if not already present
     if (!window.gtag) {
-      console.log('[GA Debug] Injecting script tag for:', GA_MEASUREMENT_ID);
       const script = document.createElement('script');
       script.async = true;
       script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
