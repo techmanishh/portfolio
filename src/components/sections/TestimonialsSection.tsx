@@ -132,7 +132,7 @@ export function TestimonialsSection() {
               {extendedTestimonials.map((test, i) => (
                 <article
                   key={`${test.id ?? test.name}-${i}`}
-                  className="shrink-0 h-full self-stretch flex"
+                  className="shrink-0 self-stretch flex"
                   style={{
                     width: cardWidth > 0 ? `${cardWidth}px` : '100%',
                   }}
@@ -143,7 +143,7 @@ export function TestimonialsSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: '-20px' }}
                     transition={{ duration: 0.4 }}
-                    className="bg-grey p-6 md:p-8 rounded-[1.75rem] flex flex-col flex-1 min-h-0 w-full h-full group transition-all duration-300 hover:bg-white hover:shadow-lg border border-transparent hover:border-black/5"
+                    className="bg-grey p-6 md:p-8 rounded-[1.75rem] flex flex-col flex-1 min-h-0 w-full group transition-[background-color,box-shadow,border-color] duration-300 hover:bg-white hover:shadow-lg border border-transparent hover:border-black/5"
                   >
                     <div className="flex-1 min-h-0">
                       <div className="text-yellow mb-4" aria-hidden>

@@ -514,7 +514,7 @@
     {
       "sequence": 6,
       "id": "business-automation",
-      "icon": "automation",
+      "icon": "route",
       "image": "/images/services/business-automation.png",
       "title": "Business Automation Solutions",
       "description": "Custom automation systems that eliminate repetitive work, streamline operations, and connect your business tools so your team can focus on growth instead of manual processes.",

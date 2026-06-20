@@ -3,8 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
         setIsVisible(true);
@@ -16,6 +18,8 @@ export function ScrollToTopButton() {
     window.addEventListener('scroll', toggleVisibility, { passive: true });
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
+
+  if (!mounted) return null;
 
   const scrollToTop = () => {
     window.scrollTo({

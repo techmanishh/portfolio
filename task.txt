@@ -1,8 +1,0 @@
-Add google analytics for website analytics and report.
-Add a up arrow button with icon that navigates to the top of page it should work on all pages and it should be in the right bottom corner
-In contact me section the short description should be more generic not about stacks
-The icons should be change for github link in the contact me section, currently it is showing "S" 
-The blog section in home page as well on blogs page i want "Practical AI in Everyday Web Development Workflows" on 2nd position
-Review the FAQs if anything need to be changed 
-For Clients Testimonials section the comment it should sound more indian client and we dont want to add any name or disgnation of them instead we can link the project links
-Look if are we missing to add anything else in Skills & Tools section

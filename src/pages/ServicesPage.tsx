@@ -46,45 +46,45 @@ function EcosystemSvg() {
       <g>
         <circle cx="250" cy="90" r="28" fill="#f6f6f6" stroke="#faae19" strokeWidth="3" />
         <circle cx="250" cy="90" r="20" fill="#faae19" className="opacity-10" />
-        <text x="250" y="90" fontFamily="Inter, sans-serif" fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">auto_awesome</text>
+        <text x="250" y="90" fontFamily="Material Symbols Outlined" style={{ fontFamily: 'Material Symbols Outlined' }} fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">{'\uE65F'}</text>
         <rect x="210" y="124" width="80" height="18" rx="9" fill="#334d36" />
-        <text x="250" y="136" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#ffffff" textAnchor="middle" letterSpacing="0.5">INTELLIGENCE</text>
+        <text x="250" y="133" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#ffffff" textAnchor="middle" dominantBaseline="central" letterSpacing="0.5">INTELLIGENCE</text>
       </g>
 
       {/* Module 2: SaaS & Products (Left-Top) */}
       <g>
         <circle cx="110" cy="180" r="26" fill="#f6f6f6" stroke="#334d36" strokeWidth="3" />
         <circle cx="110" cy="180" r="18" fill="#334d36" className="opacity-5" />
-        <text x="110" y="180" fontFamily="Inter, sans-serif" fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">rocket</text>
+        <text x="110" y="180" fontFamily="Material Symbols Outlined" style={{ fontFamily: 'Material Symbols Outlined' }} fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">{'\uEBA5'}</text>
         <rect x="75" y="212" width="70" height="18" rx="9" fill="#f6f6f6" stroke="#334d36" strokeWidth="1" />
-        <text x="110" y="223" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#334d36" textAnchor="middle">SAAS & MVP</text>
+        <text x="110" y="221" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central">SAAS & MVP</text>
       </g>
 
       {/* Module 3: Web Apps (Right-Top) */}
       <g>
         <circle cx="390" cy="180" r="26" fill="#f6f6f6" stroke="#334d36" strokeWidth="3" />
         <circle cx="390" cy="180" r="18" fill="#334d36" className="opacity-5" />
-        <text x="390" y="180" fontFamily="Inter, sans-serif" fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">layers</text>
+        <text x="390" y="180" fontFamily="Material Symbols Outlined" style={{ fontFamily: 'Material Symbols Outlined' }} fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">{'\uE53B'}</text>
         <rect x="355" y="212" width="70" height="18" rx="9" fill="#f6f6f6" stroke="#334d36" strokeWidth="1" />
-        <text x="390" y="223" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#334d36" textAnchor="middle">CUSTOM WEB</text>
+        <text x="390" y="221" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central">CUSTOM WEB</text>
       </g>
 
       {/* Module 4: Automation (Left-Bottom) */}
       <g>
         <circle cx="160" cy="360" r="26" fill="#f6f6f6" stroke="#334d36" strokeWidth="3" />
         <circle cx="160" cy="360" r="18" fill="#334d36" className="opacity-5" />
-        <text x="160" y="360" fontFamily="Inter, sans-serif" fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">automation</text>
+        <text x="160" y="360" fontFamily="Material Symbols Outlined" style={{ fontFamily: 'Material Symbols Outlined' }} fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">{'\uEACD'}</text>
         <rect x="120" y="392" width="80" height="18" rx="9" fill="#f6f6f6" stroke="#334d36" strokeWidth="1" />
-        <text x="160" y="403" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#334d36" textAnchor="middle">AUTOMATIONS</text>
+        <text x="160" y="401" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central">AUTOMATIONS</text>
       </g>
 
       {/* Module 5: Cloud & Infrastructure (Right-Bottom) */}
       <g>
         <circle cx="340" cy="360" r="26" fill="#f6f6f6" stroke="#faae19" strokeWidth="3" />
         <circle cx="340" cy="360" r="18" fill="#faae19" className="opacity-10" />
-        <text x="340" y="360" fontFamily="Inter, sans-serif" fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">cloud</text>
+        <text x="340" y="360" fontFamily="Material Symbols Outlined" style={{ fontFamily: 'Material Symbols Outlined' }} fontSize="20" fontWeight="bold" fill="#334d36" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">{'\uE2BD'}</text>
         <rect x="300" y="392" width="80" height="18" rx="9" fill="#334d36" />
-        <text x="340" y="403" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#ffffff" textAnchor="middle">INFRASTRUCTURE</text>
+        <text x="340" y="401" fontFamily="Inter, sans-serif" fontSize="8" fontWeight="bold" fill="#ffffff" textAnchor="middle" dominantBaseline="central">INFRASTRUCTURE</text>
       </g>
     </svg>
   );
@@ -163,9 +163,10 @@ export default function ServicesPage() {
                 key={service.id}
                 initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -4 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.07 }}
-                className="bg-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full border border-black/[0.03]"
+                className="bg-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-[box-shadow,border-color,background-color] duration-300 flex flex-col h-full border border-black/[0.03]"
               >
                 <div className="mb-6 w-14 h-14 bg-yellow rounded-full flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-2xl text-green">{service.icon}</span>

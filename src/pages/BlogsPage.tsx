@@ -82,7 +82,7 @@ function BlogsSvg() {
       <g className="hover:scale-110 transition-transform duration-300" style={{ transformOrigin: '110px 180px' }}>
         <circle cx="110" cy="180" r="22" fill="#f6f6f6" stroke="#334d36" strokeWidth="2.5" />
         <circle cx="110" cy="180" r="14" fill="#faae19" className="opacity-15" />
-        <text x="110" y="180" fontFamily="Inter, sans-serif" fontSize="14" fontWeight="bold" fill="#faae19" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">rate_review</text>
+        <text x="110" y="180" fontFamily="Material Symbols Outlined" style={{ fontFamily: 'Material Symbols Outlined' }} fontSize="14" fontWeight="bold" fill="#faae19" textAnchor="middle" dominantBaseline="central" className="material-symbols-outlined select-none">{'\uE560'}</text>
       </g>
     </svg>
   );
