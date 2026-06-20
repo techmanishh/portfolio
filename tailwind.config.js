@@ -36,7 +36,7 @@ export default {
       animation: {
         scroll: 'scroll 50s linear infinite',
         'scroll-reverse': 'scroll 50s linear infinite reverse',
-        'scroll-slow': 'scroll 50s linear infinite',
+        'scroll-slow': 'scroll 70s linear infinite',
         'fade-in': 'fade-in 0.45s ease-out forwards',
       },
     },
