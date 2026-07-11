@@ -116,7 +116,7 @@ export default function ProjectDetailPage() {
 
               {/* Gallery Thumbnails */}
               {galleryThumbs.length > 0 && (
-                <div className="lg:col-span-3 flex lg:flex-col gap-4 h-[300px] md:h-[500px]">
+                <div className="lg:col-span-3 flex lg:flex-col gap-4 h-[100px] sm:h-[150px] lg:h-[500px]">
                   {galleryThumbs.map((src) => (
                     <button
                       key={src}
@@ -133,6 +133,12 @@ export default function ProjectDetailPage() {
                   ))}
                 </div>
               )}
+            </div>
+
+            {/* Disclaimer note */}
+            <div className="flex items-center gap-2 mt-5 mb-10 px-2 text-green/60 font-body text-xs md:text-sm">
+              <span className="material-symbols-outlined text-[16px] text-yellow shrink-0" aria-hidden>info</span>
+              <span className="italic">Note: The images displayed above are placeholder mockups for demonstration purposes and do not contain real client data or actual production screenshots.</span>
             </div>
           </ScrollReveal>
         </div>

@@ -262,6 +262,10 @@
     {
       "icon": "payments",
       "label": "Stripe & Razorpay"
+    },
+    {
+      "icon": "route",
+      "label": "n8n"
     }
   ],
   "services": [
@@ -320,7 +324,7 @@
     },
     {
       "id": "t2",
-      "text": "Outstanding work on our logistics website. Manish built a fully responsive, lightweight static site with integrated WhatsApp options that makes it easy for our local cargo clients to reach us.",
+      "text": "Outstanding work on our logistics website. Manish built a fully responsive, lightweight static site that makes it easy for our local cargo clients to see our service offerings and get in touch with us.",
       "projectId": "expresstrackers-website"
     },
     {

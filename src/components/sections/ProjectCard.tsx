@@ -12,6 +12,7 @@ export function ProjectCard({ project, index = 0 }: Props) {
 
   return (
     <motion.article
+      layout
       className="h-full"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}

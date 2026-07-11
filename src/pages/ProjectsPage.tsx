@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { projects } from '@/data/portfolio';
@@ -104,6 +105,12 @@ function ProjectsSvg() {
 }
 
 export default function ProjectsPage() {
+  const [filter, setFilter] = useState<string>('all');
+
+  const filteredProjects = projects.filter(
+    (p) => filter === 'all' || p.category === filter
+  );
+
   return (
     <>
       <Helmet>
@@ -128,26 +135,26 @@ export default function ProjectsPage() {
                   <span className="text-green/30">/</span>
                   <span className="text-green/60 pointer-events-none">Projects</span>
                 </div>
-
+ 
                 {/* Eyebrow Label */}
                 <div className="mb-2">
                   <SectionEyebrow label="Projects" className="!mb-0" />
                 </div>
-
+ 
                 {/* Main Heading */}
                 <h1 className="font-headline font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.1] text-green mb-6">
                   Featured Works & <br className="hidden sm:block" />
                   Creative <span className="text-yellow italic font-normal">Projects</span>
                 </h1>
-
+ 
                 {/* Supporting Description */}
                 <p className="font-body text-lg text-green/70 leading-relaxed mb-0 max-w-xl">
                   Browse a curated collection of client products, SaaS applications, and custom engineering works built to solve real-world business challenges.
                 </p>
-
+ 
               </ScrollReveal>
             </div>
-
+ 
             {/* Right Column: Visual Element */}
             <div className="lg:col-span-5 relative w-full flex items-center justify-center">
               <ScrollReveal delay={0.2} className="relative w-full max-w-[450px]">
@@ -157,20 +164,60 @@ export default function ProjectsPage() {
                 <div className="absolute -top-10 -left-10 w-48 h-48 bg-green/5 rounded-full blur-2xl -z-10" />
               </ScrollReveal>
             </div>
-
+ 
           </div>
         </div>
       </section>
-
+ 
       <MarqueeBanner />
-
+ 
       <section className="pt-16 md:pt-20 pb-20 md:pb-24 bg-grey">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
-            {projects.map((p, i) => (
-              <ProjectCard key={p.id} project={p} index={i} />
-            ))}
+          
+          {/* Premium Filter Tabs */}
+          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-12 max-w-4xl mx-auto p-1.5 bg-white/70 backdrop-blur-md rounded-full shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-black/[0.04]">
+            {(
+              [
+                { id: 'all', label: 'All' },
+                { id: 'saas', label: 'SaaS Platforms' },
+                { id: 'website', label: 'Websites' },
+                { id: 'ecom', label: 'E-Commerce' },
+                { id: 'automation', label: 'Automation Tools' },
+                { id: 'mobile', label: 'Mobile Apps' },
+              ] as const
+            ).map((tab) => {
+              const isActive = filter === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setFilter(tab.id)}
+                  className={`px-5 py-2.5 rounded-full text-xs md:text-sm font-headline font-bold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green cursor-pointer ${
+                    isActive
+                      ? 'bg-green text-white shadow-md'
+                      : 'text-green/70 hover:text-green hover:bg-black/[0.03]'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              );
+            })}
           </div>
+
+          {filteredProjects.length > 0 ? (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
+              {filteredProjects.map((p, i) => (
+                <ProjectCard key={p.id} project={p} index={i} />
+              ))}
+            </div>
+          ) : (
+            <ScrollReveal className="text-center py-16 px-6 bg-white rounded-2xl border border-black/[0.04] shadow-sm max-w-md mx-auto">
+              <span className="material-symbols-outlined text-4xl text-green/40 mb-3 block">construction</span>
+              <p className="font-headline font-bold text-lg text-green mb-1">Coming Soon</p>
+              <p className="font-body text-sm text-green/60 leading-relaxed">
+                I am currently working on some exciting new projects in this category. Check back soon or contact me to discuss a custom build!
+              </p>
+            </ScrollReveal>
+          )}
         </div>
       </section>
 

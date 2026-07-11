@@ -71,7 +71,9 @@ export default function ServiceDetailPage() {
             {/* Image on Right */}
             <ScrollReveal delay={0.2} className="relative">
               {item.image && (
-                <div className="relative z-10 w-full aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl border-4 border-grey/30">
+                <div className={`relative z-10 w-full rounded-[3rem] overflow-hidden shadow-2xl border-4 border-grey/30 ${
+                  item.id === 'mobile-app' || item.id === 'ecommerce' ? 'aspect-square' : 'aspect-[3/2]'
+                }`}>
                   <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                 </div>
               )}

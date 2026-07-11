@@ -1,51 +1,42 @@
 {
   "projects": [
-
     {
       "id": "urbanlogic-cms",
       "order": 1,
-      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
+      "category": "saas",
+      "image": "/images/projects/urban_logic_building.png",
       "gallery": [
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=900&auto=format&fit=crop",
+        "/images/projects/urban_logic_main.png",
+        "/images/projects/urban_logic_doc.png",
         "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=900&auto=format&fit=crop"
       ],
       "title": "Urban Logic — Real Estate Board Package Platform",
-      "live_url": "https://urbanlogic.io",
-      "is_public": true,
-      "content": "Urban Logic is a full-stack real estate application management platform built for NYC co-op and rental buildings. The system handles the complete lifecycle of board package applications — from multi-step form completion and deal party management, to Stripe payment processing, PandaDoc e-signature workflows, OneApp credit and background screening, and board approval.\n\nThe platform serves multiple user roles: applicants, co-applicants, guarantors, brokers, property managers, board members, and customer support staff. Each role has a distinct workflow with role-based access controls, conditional form logic, and audit trail logging for every action taken.\n\nI contributed across the full stack — building and hardening the Laravel 12 REST API backend (PHP 8.2+), implementing third-party service integrations, and working on the React 18 SPA frontend. Work included a comprehensive security and performance audit covering input validation, webhook signature verification, race condition prevention, cascade delete optimization, and elimination of code vulnerabilities including an eval()-based RCE risk in the fee calculation engine.\n\nThe platform is live in production, serving real property management companies and applicants across New York City.",
-      "summary": "A USA-based full-stack real estate board package platform for NYC properties, featuring Stripe payment processing, PandaDoc e-signatures, OneApp credit screening, AWS S3 document storage, and multi-role application management for co-op and rental buildings.",
+      "live_url": "",
+      "is_public": false,
+      "content": "Urban Logic is a full-stack real estate application management platform built for New York City co-op and rental buildings. The system handles the complete lifecycle of board package applications — from multi-step form completion and deal party management, to Stripe payment processing, PandaDoc e-signature workflows, OneApp credit and background screening, and board approval.\n\nThe platform serves multiple user roles: applicants, co-applicants, guarantors, brokers, property managers, board members, and customer support staff. Each role has a distinct workflow with role-based access controls, conditional form logic, and audit trail logging for every action taken.\n\nI contributed across the full stack — building and hardening the Laravel 12 REST API backend (PHP 8.2+), implementing third-party service integrations, and working on the React 18 SPA frontend. Work included a comprehensive security and performance audit covering input validation, webhook signature verification, race condition prevention, cascade delete optimization, and elimination of code vulnerabilities including an eval()-based RCE risk in the fee calculation engine.\n\nThe platform is live in production, serving real property management companies and applicants across New York City.",
+      "summary": "A USA-based full-stack real estate board package platform for New York City properties, featuring Stripe payment processing, PandaDoc e-signatures, OneApp credit screening, AWS S3 document storage, and multi-role application management for co-op and rental buildings.",
       "tags": [
         "USA Based",
         "Real Estate",
         "SaaS Platform",
         "Multi-Role Application",
         "Document Management",
-        "NYC Property Tech"
+        "New York City Property Tech"
       ],
       "stack": [
-        "Laravel 12",
-        "PHP 8.2",
-        "React 18",
-        "Redux Toolkit",
-        "MySQL",
+        "Laravel",
+        "React",
+        "PostgreSQL",
         "Stripe",
         "PandaDoc",
-        "AWS S3",
-        "AWS Lambda",
-        "SendGrid",
-        "OneApp",
-        "Laravel Sanctum",
-        "Vite",
-        "Material UI",
-        "React Query",
-        "Pusher"
+        "AWS",
+        "SendGrid"
       ],
-      "problem": "NYC property management companies needed a centralised digital platform to manage the complex board package application process — a multi-party, document-heavy workflow involving applicants, brokers, guarantors, property managers, and board members. Existing processes relied on paper forms, email chains, and manual document collection, making it slow, error-prone, and difficult to track at scale.",
-      "solution": "Built a comprehensive full-stack platform that digitises the entire application lifecycle. Applicants fill multi-step conditional forms, pay fees via Stripe, sign documents via PandaDoc e-signatures, and submit to board — all within a single platform. Property managers oversee applications, trigger credit/background checks via OneApp, manage refunds, and send packages to the board. Board members review and approve or reject directly in the system. Every action is logged to a full audit trail.",
+      "problem": "New York City property management companies needed a centralized digital platform to manage the complex board package application process — a multi-party, document-heavy workflow involving applicants, brokers, guarantors, property managers, and board members. Existing processes relied on paper forms, email chains, and manual document collection, making it slow, error-prone, and difficult to track at scale.",
+      "solution": "Built a comprehensive full-stack platform that digitizes the entire application lifecycle. Applicants fill out multi-step conditional forms, pay fees via Stripe, sign documents via PandaDoc e-signatures, and submit to board — all within a single platform. Property managers oversee applications, trigger credit/background checks via OneApp, manage refunds, and send packages to the board. Board members review and approve or reject directly in the system. Every action is logged to a full audit trail.",
       "features": [
         "Multi-step conditional form engine with per-building, per-role, per-application-type workflows",
-        "Stripe payment gateway integration — invoices, tax rates (NY/NJ), refunds, and webhook handling",
+        "Stripe payment gateway integration — invoices, tax rates (New York and New Jersey), refunds, and webhook handling",
         "PandaDoc e-signature integration — document generation, token mapping, embedded signing, webhook lifecycle",
         "OneApp credit and background screening — screening initiation, PDF retrieval, and webhook processing",
         "AWS S3 document storage with pre-signed URL generation for secure file access",
@@ -63,7 +54,7 @@
         "Conducted and implemented a comprehensive 48-item security, bug, performance, and code quality audit",
         "Replaced an eval()-based RCE vulnerability in the fee calculation engine with a safe recursive descent arithmetic parser",
         "Implemented HMAC-SHA256 webhook signature verification for both PandaDoc and Stripe webhooks",
-        "Optimised Application cascade soft-delete from N+1 in-memory collection operations to batch SQL UPDATE queries",
+        "Optimized Application cascade soft-delete from N+1 in-memory collection operations to batch SQL UPDATE queries",
         "Multi-role conditional form system supporting building-specific, application-type-specific workflows"
       ],
       "challenges": [
@@ -75,7 +66,7 @@
         "Supporting role-switching (brokers acting as applicants) across the full API and frontend state layers"
       ],
       "impact": [
-        "Digitised the entire NYC board package application process for multiple live property buildings",
+        "Digitized the entire New York City board package application process for multiple live property buildings",
         "Reduced manual document handling and email coordination for property management companies",
         "Enabled applicants, brokers, and property managers to collaborate in a single tracked platform",
         "Secured payment and document workflows processing real transactions and legally-binding e-signatures",
@@ -85,24 +76,25 @@
         "Designing multi-tenant, multi-role access control systems with granular per-resource authorization",
         "Integrating and hardening multiple third-party payment and document APIs in a production environment",
         "Identifying and fixing subtle bugs — race conditions, null pointer paths, and incorrect boolean logic — through systematic auditing",
-        "Optimising database-heavy operations (cascade deletes, N+1 queries) for production scale",
+        "Optimizing database-heavy operations (cascade deletes, N+1 queries) for production scale",
         "Building conditional form workflows driven entirely by database configuration rather than hardcoded logic"
       ]
     },
     {
       "id": "expresstrackers-website",
       "order": 2,
-      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
+      "category": "website",
+      "image": "/images/projects/ocean_freight.png",
       "gallery": [
-        "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1504493932913-4f2e7e5c2f03?q=80&w=900&auto=format&fit=crop"
+        "/images/projects/air_freight.png",
+        "/images/projects/road_transport.png",
+        "/images/projects/warehousing.png"
       ],
       "title": "Express Trackers — Logistics & Freight Forwarding Website",
       "live_url": "https://expresstrackers.in",
       "is_public": true,
-      "content": "Express Trackers is a professionally designed multi-page business website built for a Mumbai-based logistics and freight forwarding company operating since 2014. The site was built from scratch using pure HTML, CSS, and JavaScript — no frameworks, no dependencies.\n\nThe website covers the company's full range of services including Ocean Freight, Air Freight, Custom Clearance, Courier & Cargo, Road Transportation, Warehousing, and Marine Cargo Insurance. It presents the brand's key differentiators — real-time Web & SMS shipment tracking, transparent pricing, and 12+ years of experience — to its target audience of small and medium-sized businesses.\n\nDesign focus was placed on building a credibility-first experience: clean layout, clear service breakdowns, an animated stat counter section, a 4-step process flow, and a fully functional contact section with WhatsApp integration. The site is fully responsive across desktop and mobile devices.",
-      "summary": "A multi-page business website for an India-based logistics and freight forwarding company, built with pure HTML, CSS, and JavaScript. Covers 7 freight services, real-time shipment tracking, and SMB-focused positioning for a company with 12+ years of experience and 15,000+ parcels delivered.",
+      "content": "Express Trackers is a professionally designed multi-page business website built for a Mumbai-based logistics and freight forwarding company operating since 2014. The site was built from scratch using pure HTML, CSS, and JavaScript — no frameworks, no dependencies.\n\nThe website covers the company's full range of services including Ocean Freight, Air Freight, Custom Clearance, Courier & Cargo, Road Transportation, Warehousing, and Marine Cargo Insurance. It presents the brand's key differentiators — transparent pricing, professional service delivery, and 12+ years of experience — to its target audience of small and medium-sized businesses.\n\nDesign focus was placed on building a credibility-first experience: clean layout, clear service breakdowns, an animated stat counter section, a 4-step process flow, and a fully functional contact section. The site is fully responsive across desktop and mobile devices.",
+      "summary": "A multi-page business website for an India-based logistics and freight forwarding company, built with pure HTML, CSS, and JavaScript. Covers 7 freight services and SMB-focused positioning for a company with 12+ years of experience and 15,000+ parcels delivered.",
       "tags": [
         "India Based",
         "Business Website",
@@ -115,18 +107,15 @@
         "HTML5",
         "CSS3",
         "JavaScript",
-        "Responsive Design",
-        "WhatsApp Integration",
-        "Web & SMS Tracking"
+        "Responsive Design"
       ],
       "problem": "Express Trackers, a founder-led logistics company based in Vasai (Mumbai), lacked a professional web presence that could communicate their full service range and decade-long credibility to potential SMB clients. Without a structured site, converting inquiries and establishing trust with new customers was difficult.",
-      "solution": "Designed and developed a clean, multi-page static website that clearly presents all 7 logistics services, showcases key business metrics (12+ years, 15,000+ parcels delivered, 98% satisfaction rate), and guides visitors through a simple inquiry-to-delivery process flow. The site includes a WhatsApp contact shortcut, social media links, and a full contact page to make reaching the team frictionless.",
+      "solution": "Designed and developed a clean, multi-page static website that clearly presents all 7 logistics services, showcases key business metrics (12+ years, 15,000+ parcels delivered, 98% satisfaction rate), and guides visitors through a simple inquiry-to-delivery process flow. The site includes social media links and a full contact page to make reaching the team frictionless.",
       "features": [
         "Multi-page layout — Home, About, Services, and Contact pages",
         "Animated business metrics: 12+ years experience, 15,000+ parcels, 26+ clients, 98% satisfaction",
         "7-service breakdown with individual descriptions: Ocean Freight, Air Freight, Custom Clearance, Courier & Cargo, Road Transportation, Warehousing, and Marine Cargo Insurance",
         "4-step process flow: Inquiry → Planning → Shipping → Delivery",
-        "WhatsApp direct contact integration",
         "Fully responsive layout for desktop and mobile",
         "Company mission, vision, and core values section",
         "Subsidiary division (Dhruv Transport) highlighted in road logistics section"
@@ -146,7 +135,7 @@
       "impact": [
         "Gave Express Trackers a professional online presence representing 12+ years of logistics operations",
         "Improved discoverability and credibility for SMB clients seeking freight forwarding services in India",
-        "Streamlined the inquiry process with direct WhatsApp and contact form access",
+        "Streamlined the inquiry process with a structured contact form",
         "Presented all 7 services in a structured format, reducing back-and-forth for potential clients"
       ],
       "learnings": [
@@ -159,17 +148,18 @@
     {
       "id": "hanusan-pharmaceutical",
       "order": 3,
-      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=1200&auto=format&fit=crop",
+      "category": "ecom",
+      "image": "/images/projects/hanusan_ecom_main.png",
       "gallery": [
-        "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1550572017-edd951aa8f72?q=80&w=900&auto=format&fit=crop"
+        "/images/projects/hanusan_bottles.png",
+        "/images/projects/hanusan_lab.png",
+        "/images/projects/hanusan_ingredients.png"
       ],
       "title": "Hanusan Pharmaceutical — D2C Nutraceutical E-Commerce Store",
       "live_url": "https://hanusanpharmaceutical.com",
       "is_public": true,
-      "content": "Hanusan Pharmaceutical is a direct-to-consumer nutraceutical e-commerce brand founded by pharmacist Nitesh Roshan, based in Vasai West, Maharashtra, India. The brand is built on a preventive healthcare philosophy — 'Prevention is Powerful. Quality is Non-Negotiable.' — and positions its products on pharmacist-led credibility, clinical backing, and transparent formulations.\n\nThe store was built on Shopify with a custom storefront design using HTML, CSS, and JavaScript. The work involved building a conversion-optimised product experience for their flagship supplement San-D (Vitamin D3 + K2), including a comparison section, certification display, FAQ, testimonials, and promotional offer mechanics.\n\nThe site is fully e-commerce ready — with multi-gateway payment support (UPI, cards, Google Pay, Apple Pay, PayPal, net banking), discount/coupon functionality, a customer review system, and India-wide shipping. Certifications displayed include GMP, FSSAI, ISO, FDA (India), Vegan, and Made in India.",
-      "summary": "An India-based D2C nutraceutical e-commerce store for a pharmacist-founded supplement brand, built on Shopify with custom HTML, CSS, and JavaScript. Features multi-gateway payments (UPI, cards, Google Pay, Apple Pay, PayPal), promo code support, product comparison UI, and certification-led credibility design.",
+      "content": "Hanusan Pharmaceutical is a direct-to-consumer nutraceutical e-commerce brand founded by pharmacist Nitesh Roshan, based in Vasai West, Maharashtra, India. The brand is built on a preventive healthcare philosophy — 'Prevention is Powerful. Quality is Non-Negotiable.' — and positions its products on pharmacist-led credibility, clinical backing, and transparent formulations.\n\nThe store was built on Shopify with a custom storefront design using HTML, CSS, and JavaScript. The work involved building a conversion-optimised product experience for their flagship supplement San-D (Vitamin D3 + K2), including a comparison section, certification display, FAQ, testimonials, and promotional offer mechanics.\n\nThe site is fully e-commerce ready — with multi-gateway payment support (UPI, cards, Google Pay, Apple Pay, PayPal, net banking), discount/coupon functionality, a customer review system, India-wide shipping, and integrated delivery services for automated fulfillment and real-time order tracking. Certifications displayed include GMP, FSSAI, ISO, FDA (India), Vegan, and Made in India.",
+      "summary": "An India-based D2C nutraceutical e-commerce store for a pharmacist-founded supplement brand, built on Shopify with custom HTML, CSS, and JavaScript. Features multi-gateway payments (UPI, cards, Google Pay, Apple Pay, PayPal), integrated delivery services with live order tracking, promo code support, product comparison UI, and certification-led credibility design.",
       "tags": [
         "India Based",
         "E-Commerce",
@@ -181,16 +171,10 @@
       ],
       "stack": [
         "Shopify",
-        "HTML5",
-        "CSS3",
+        "Liquid",
         "JavaScript",
-        "Liquid (Shopify Templating)",
-        "UPI Payments",
-        "Google Pay",
-        "Apple Pay",
-        "PayPal",
-        "Visa / Mastercard",
-        "Net Banking"
+        "Payment Gateway",
+        "Delivery Service"
       ],
       "problem": "A pharmacist-founded nutraceutical brand needed a credibility-first e-commerce storefront that could communicate clinical differentiation — not just list a product. Generic Shopify themes don't convey scientific trust, certifications, or ingredient-level comparisons in a way that converts health-conscious buyers who are sceptical of supplement brands.",
       "solution": "Built a custom Shopify storefront with a conversion-focused design that leads with clinical credibility — pharmacist founding story, GMP/FSSAI/ISO/FDA certifications, a direct comparison table against D3-only competitors, customer testimonials, and a structured FAQ addressing medical concerns. Multi-gateway checkout (UPI, cards, digital wallets, PayPal) ensures frictionless purchase across India's diverse payment preferences.",
@@ -204,12 +188,14 @@
         "FAQ section addressing clinical usage, medication compatibility, pregnancy safety, and long-term use",
         "Founder story and pharmacist credibility section on About page",
         "Mobile-responsive layout optimised for smartphone shoppers",
+        "Integrated delivery services for automated shipping label generation, dispatch, and real-time customer order tracking",
         "Cart, account creation, login, and full checkout flow"
       ],
       "highlights": [
         "Conversion-optimised design for a science-backed health brand launching its first product",
         "Clinical comparison table distinguishing D3+K2 synergy from inferior D3-only alternatives",
         "Full multi-gateway payment integration covering all major Indian and international payment methods",
+        "Integrated delivery logistics to streamline automated shipping and real-time tracking for customers",
         "Certification trust strip (GMP, FSSAI, ISO, FDA, Vegan) built to convert sceptical supplement buyers",
         "Achieved 4.5/5 star rating from early users with the flagship product selling out post-launch"
       ],
@@ -218,12 +204,13 @@
         "Differentiating a single-product launch in a crowded Indian nutraceutical market through design and messaging alone",
         "Building a comparison UI that is persuasive without being misleading or triggering regulatory issues",
         "Optimising checkout conversion across India's fragmented payment landscape (UPI-first users, card users, wallet users)",
+        "Configuring webhook-based status updates from delivery providers for accurate customer-facing tracking",
         "Communicating complex nutritional science (D3+K2 synergy, MK-7 bioavailability) in accessible, non-jargon language"
       ],
       "impact": [
         "Launched a pharmacist-founded D2C supplement brand with a professional, credibility-first online presence",
         "Flagship product San-D sold out post-launch with 19 customer reviews and a 4.5/5 satisfaction rating",
-        "Enabled India-wide sales across diverse payment methods — UPI, cards, wallets, and net banking",
+        "Enabled India-wide sales with integrated delivery fulfillment and real-time package tracking across diverse payment methods — UPI, cards, wallets, and net banking",
         "Helped position a new brand against established supplement competitors through ingredient-level comparison design",
         "Provided a scalable Shopify foundation ready for new product additions (dermaceutical pipeline)"
       ],
@@ -231,25 +218,98 @@
         "Designing health and wellness e-commerce with regulatory awareness — balancing persuasion and compliance in copy",
         "Building Shopify storefronts with custom HTML, CSS, and JavaScript beyond default theme capabilities",
         "Structuring product pages for clinical credibility — certifications, comparisons, FAQs, and founder trust signals",
+        "Integrating third-party delivery APIs and webhook tracking status updates into Shopify checkout flows",
         "Optimising for India's payment diversity — UPI, digital wallets, cards, and net banking in a single checkout flow",
         "Translating a founder's domain expertise (pharmacist) into a brand story that converts first-time supplement buyers"
       ]
     },
     {
+      "id": "punchkraft-website",
+      "order": 2,
+      "category": "website",
+      "image": "/images/projects/punch_kraft.webp",
+      "gallery": [
+        "/images/projects/punch_kraft_1.webp",
+        "/images/projects/punch_kraft_2.webp",
+        "/images/projects/punch_kraft_3.webp"
+      ],
+      "title": "Punch Kraft — Wooden Die Manufacturing Website & Local SEO",
+      "live_url": "https://punchkraft-devataent.in",
+      "is_public": true,
+      "content": "Punch Kraft by Devata Enterprises is a leading wooden die manufacturer based in India. The website is a premium, high-performance B2B platform designed to showcase the company's advanced die-manufacturing capabilities—including Duplex, Corrugated, Rotary, Gasket, and Sticker Dies. Built from scratch with vanilla HTML, CSS, and JavaScript, the site features a sleek, credibility-first design, interactive FAQ accordions, and a custom B2B inquiry form.\n\nTo drive business growth and capture leads efficiently, the platform integrates a lightweight Google Apps Script endpoint that captures inquiry form data, processes it with honeypot spam protection, and automatically records submissions in a Google Sheets database. Additionally, we executed a comprehensive local SEO and Google Business Profile optimization campaign, including location targeting, listing 8 specialized core services, integrating WhatsApp, and scheduling search-ranking post updates.",
+      "summary": "A high-performance B2B website and local SEO campaign for an Indian wooden die manufacturer. Built with pure HTML, CSS, and JS, featuring a custom Google Sheets data collection integration via Apps Script and a fully optimized Google Business Profile.",
+      "tags": [
+        "India Based",
+        "B2B Website",
+        "Manufacturing",
+        "Google Apps Script",
+        "Local SEO",
+        "Static Site"
+      ],
+      "stack": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Google Apps Script",
+        "Google Sheets API",
+        "Google Business Profile"
+      ],
+      "problem": "Punch Kraft by Devata Enterprises needed a modern digital presence to showcase their advanced machinery and custom die-making expertise to packaging manufacturers across India. They also needed an automated, zero-cost lead capture system and a highly optimized Google Business presence to pull in high-intent local B2B inquiries without paying for heavy CRM tools.",
+      "solution": "Developed a premium, highly responsive static website showcasing their 8 core die types and machinery. Integrated a custom serverless lead capture flow using Google Apps Script that routes contact form submissions directly into a Google Sheets spreadsheet. Simultaneously optimized their Google Business Profile, populating all 8 services, integrating direct WhatsApp triggers, uploading high-quality branding, and initiating a targeted local SEO post campaign.",
+      "features": [
+        "Clean, semantic multi-page HTML/CSS structure for fast load times",
+        "Google Apps Script integration for serverless lead capture directly to Google Sheets",
+        "Honeypot-based spam protection to filter out automated bots without CAPTCHA friction",
+        "Interactive FAQ accordion custom-engineered with smooth CSS height transitions",
+        "Fully responsive design optimized for desktop, tablet, and mobile layouts",
+        "Direct WhatsApp chat link integration for instant lead generation",
+        "Detailed product pages detailing Duplex, Corrugated, Rotary, Gasket, and Sticker Dies",
+        "Dedicated Machinery page highlighting advanced autobender and laser-cutting equipment"
+      ],
+      "highlights": [
+        "Zero-cost, serverless database integration using Google Apps Script POST request in no-cors mode",
+        "Complete Google Business Profile revamp: 8 core services populated, WhatsApp link, and full media branding",
+        "Precision location optimization targeting specific industrial areas to maximize B2B audience reach",
+        "Engineered local SEO July post pipeline focused on machinery highlights to boost local search rankings",
+        "Pure vanilla web development with zero framework dependencies, resulting in near-instant page speeds"
+      ],
+      "challenges": [
+        "Designing a high-end B2B interface that visualizes complex industrial dies in an appealing, clean manner",
+        "Bypassing browser CORS restrictions during form submission to a third-party Google Apps Script URL using fetch no-cors mode",
+        "Designing smooth, dynamic interactive elements (mobile menu, sticky header, scroll reveal, accordions) using pure vanilla JS and CSS",
+        "Aligning the website's SEO architecture with local Google Map listings to capture maximum local manufacturing search traffic"
+      ],
+      "impact": [
+        "Established a highly professional digital storefront for a premium manufacturer under Devata Enterprises",
+        "Automated lead capture, storing customer details and inquiry types in real-time within Google Sheets",
+        "Boosted local B2B visibility through optimized location and service categories on Google Business Profile",
+        "Reduced friction for incoming leads by implementing a clear contact workflow and direct WhatsApp triggers",
+        "Improved search rankings through scheduled content highlighting advanced factory machinery"
+      ],
+      "learnings": [
+        "Reconciling third-party form submissions with browser CORS constraints using fetch and Google Apps Script",
+        "Designing B2B manufacturer sites with clear service categorizations and machinery showcases",
+        "Optimizing local business profiles (Google Maps/GBP) in tandem with website SEO structures",
+        "Writing clean, highly performant CSS and vanilla JavaScript without standard frontend framework scaffolding"
+      ]
+    },
+    {
       "id": "energy-transition-platform",
       "order": 4,
-      "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop",
+      "category": "saas",
+      "image": "/images/projects/energy_transition_main.png",
       "gallery": [
-        "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=900&auto=format&fit=crop",
+        "/images/projects/energy_transition_gallery_1.png",
         "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=900&auto=format&fit=crop",
         "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=900&auto=format&fit=crop"
       ],
       "title": "Energy Transition Platform — South Asia Clean Energy Data Hub",
       "live_url": "https://energytransitionplatform.org",
       "is_public": true,
-      "content": "The Energy Transition Platform (ETP) South Asia is a Heinrich Böll Stiftung-funded, multi-country collaborative hub founded in 2018 to accelerate clean energy transition across eight South Asian nations — Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, and Sri Lanka. The secretariat is hosted by Vasudha Foundation, New Delhi.\n\nThe platform serves policymakers, energy researchers, civil society organisations, and development agencies across the region. It provides structured country energy data, NDC (Nationally Determined Contributions) tracking, interactive energy scenario dashboards, climate finance tracking, and a 35+ article knowledge library — all maintained and developed by VistaarDigital.\n\nThe website is built on WordPress with custom-developed interactive data dashboards for the Energy Scenario tool, Air Quality Index visualiser, and Climate Finance tracker. Country profile pages follow a standardised data template covering installed capacity, generation trends, electrification rates, EV landscapes, GHG emissions, and expert interviews — built and maintained across all eight nations with multi-year data from 2016 to 2025.",
-      "summary": "A multi-country South Asian clean energy data and policy platform built and maintained for a Heinrich Böll Stiftung-funded NGO consortium. Features interactive energy scenario dashboards, NDC country portals, AQI tracking, and climate finance data across 8 nations — built on WordPress with custom data visualisation tools.",
+      "content": "The Energy Transition Platform (ETP) South Asia is a Heinrich Böll Stiftung-funded, multi-country collaborative hub founded in 2018 to accelerate clean energy transition across eight South Asian nations — Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, and Sri Lanka. The secretariat is hosted by Vasudha Foundation, New Delhi.\n\nThe platform serves policymakers, energy researchers, civil society organisations, and development agencies across the region, developed and maintained in collaboration with Indian government bodies and regional clean energy partners. It provides structured country energy data, NDC (Nationally Determined Contributions) tracking, interactive energy scenario dashboards, climate finance tracking, and a 35+ article knowledge library — all maintained and developed by VistaarDigital.\n\nThe website is built on WordPress with custom-developed interactive data dashboards. I engineered the custom dynamic charts, graphs, and visualisations for the Energy Scenario tool, Air Quality Index visualiser, and Climate Finance tracker using JavaScript and charting libraries including Highcharts and ECharts. Country profile pages follow a standardised data template covering installed capacity, generation trends, electrification rates, EV landscapes, GHG emissions, and expert interviews — built and maintained across all eight nations with multi-year data from 2016 to 2025.",
+      "summary": "A multi-country South Asian clean energy data and policy platform built and maintained for a Heinrich Böll Stiftung-funded NGO consortium. Features custom interactive energy scenario dashboards, NDC country portals, AQI tracking, and climate finance data across 8 nations — built on WordPress with dynamic JavaScript, Highcharts, and ECharts data visualisations.",
       "tags": [
+        "Government of India",
         "NGO",
         "Clean Energy",
         "South Asia",
@@ -260,19 +320,15 @@
       ],
       "stack": [
         "WordPress",
-        "HTML5",
-        "CSS3",
         "JavaScript",
-        "Data Visualisation",
-        "REST APIs",
-        "Interactive Dashboards",
-        "CMS",
-        "Custom Post Types"
+        "Highcharts",
+        "ECharts",
+        "PHP"
       ],
       "problem": "Eight South Asian nations — with vastly different energy profiles, regulatory frameworks, and geopolitical relationships — lacked a shared, neutral platform to track clean energy progress, compare NDC commitments, and exchange knowledge. Policymakers and civil society had no centralised data source to measure regional energy transition trends or identify cross-border cooperation opportunities.",
       "solution": "Built and maintained a comprehensive multi-country web platform providing standardised country energy profiles, interactive dashboards tracking fossil vs. non-fossil capacity from 2016–2025, NDC portals for all eight nations, AQI historical data, and a climate finance tracker. The platform normalises inconsistent national data formats (different fiscal years across India, Pakistan, Bhutan, and Afghanistan) into comparable calendar-year datasets for regional analysis.",
       "features": [
-        "Interactive Energy Scenario Dashboard — multi-year (2016–2025) installed capacity, generation, and per-capita data for all 8 South Asian countries with fossil vs. non-fossil mix visualisation",
+        "Interactive Energy Scenario Dashboard — custom dynamic charts built with Highcharts and ECharts tracking multi-year (2016–2025) installed capacity, generation, and per-capita data for all 8 South Asian countries",
         "NDC Country Portal — Nationally Determined Contributions for all 8 nations (submission years 2016–2022) with structured country sub-pages",
         "Air Quality Index Dashboard — historical AQI visualisation from 2021–2025 across South Asian cities",
         "Climate Finance Tracker — GCF (Green Climate Fund) and GEF flows across the region",
@@ -288,7 +344,7 @@
         "Built for a Heinrich Böll Stiftung-funded NGO consortium with Vasudha Foundation, Grameen Shakti, Practical Action, and 8 other partner organisations",
         "Interactive dashboards tracking a 10.71% regional shift from fossil to non-fossil fuel capacity over the platform's lifetime",
         "NDC portal centralising climate commitments across Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, and Sri Lanka",
-        "Sole digital infrastructure provider (VistaarDigital) for a multi-country policy platform used by policymakers, researchers, and development agencies"
+        "Sole digital infrastructure provider (VistaarDigital) for a multi-country clean energy policy platform supported by the Government of India and regional partner organisations"
       ],
       "challenges": [
         "Normalising energy data from 8 countries with different fiscal year calendars (India: April–March; Pakistan: July–June; Bhutan: January–August) into comparable calendar-year datasets",
@@ -308,18 +364,19 @@
         "Building data platforms that must reconcile inconsistent, multi-source national datasets into coherent regional visualisations",
         "Designing policy-sector websites where credibility, data accuracy, and neutral presentation are more important than conversion or engagement metrics",
         "Managing long-term content maintenance across 8 country profiles, each with independent data sources and update cycles",
-        "Developing interactive dashboards within a WordPress ecosystem using custom JavaScript and data visualisation libraries",
+        "Developing complex interactive dashboards and custom dynamic charts using JavaScript graphing libraries like Highcharts and ECharts within a WordPress ecosystem",
         "Working with NGO and development sector clients where stakeholder alignment across multiple partner organisations shapes every content and design decision"
       ]
     },
     {
       "id": "iced-niti-aayog",
       "order": 5,
-      "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200&auto=format&fit=crop",
+      "category": "saas",
+      "image": "/images/projects/iced_main.png",
       "gallery": [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=900&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=900&auto=format&fit=crop"
+        "/images/projects/iced_gallery_1.png",
+        "/images/projects/iced_gallery_2.png",
+        "/images/projects/iced_gallery_3.png"
       ],
       "title": "ICED — India Climate & Energy Dashboard (NITI Aayog)",
       "live_url": "https://iced.niti.gov.in",
@@ -336,17 +393,10 @@
         "India"
       ],
       "stack": [
-        "React",
+        "Angular",
         "JavaScript",
-        "HTML5",
-        "CSS3",
         "Leaflet.js",
-        "Data Visualisation",
-        "REST APIs",
-        "Geospatial Mapping",
-        "Excel / XLS Export",
-        "NIC Infrastructure",
-        "WordPress CMS"
+        "Data Visualisation"
       ],
       "problem": "India's climate and energy data was fragmented across dozens of government ministries, departments, and portals — inaccessible to policymakers, researchers, and state governments in a unified, comparable format. With India's NDC commitments, Net Zero 2070 goal, and G20 climate obligations requiring evidence-based decision-making, there was no single platform to track energy transition progress, GHG emissions, DISCOM performance, and economic indicators together.",
       "solution": "Built a comprehensive, cross-domain data dashboard that aggregates official data from the Ministry of Coal, Ministry of Power, MNRE, CEA, RBI, MoSPI, and more into a single interactive platform. The platform provides filterable time-series visualisations, state-level drill-downs, geospatial maps, nine dedicated analytics tools, and direct XLS data downloads — while also acting as a gateway to 23 external government energy portals.",
@@ -390,7 +440,7 @@
       ],
       "learnings": [
         "Architecting large-scale government data platforms with multi-domain, multi-source data requiring rigorous methodology documentation",
-        "Building performant React-based dashboards with deep state/time filtering across hundreds of data series",
+        "Building performant Angular-based dashboards with deep state/time filtering across hundreds of data series",
         "Integrating Leaflet.js geospatial maps with national-scale government datasets",
         "Navigating government project constraints — NIC hosting, gov.in domain, multi-stakeholder sign-off — while delivering a modern frontend",
         "Designing data visualisations that serve both technical analysts and high-level policy audiences from a single platform"

@@ -35,6 +35,7 @@ export type Project = {
   order?: number;
   image: string;
   gallery?: string[];
+  category?: string;
   tags: string[];
   title: string;
   summary?: string;
